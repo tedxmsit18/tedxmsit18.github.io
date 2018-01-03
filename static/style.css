@@ -16,16 +16,21 @@ html, body, .cover {
 #home {
     color: #cacaca;
     font-size: 20px;
-    
+   
 }
 
 nav{
     background-color: white;
     height: 80px;
-  
+     margin-bottom:0; 
+}
+nav.navbar.navbar-default.navbar-fixed-top {
+    margin-bottom:0;
 }
 
+
 nav .container .collapse .nav button {
+    
     margin-top: -10px;
 }
 
@@ -61,10 +66,6 @@ nav .container .collapse .nav .dropdown-menu li a:hover {
     color: white;
     
 }
-
-
-
-
 
 
 
@@ -319,6 +320,15 @@ color: #fff;
     width: 100%;
 border: none;
 }
+.scroll {
+    white-space: nowrap;
+    overflow-x :scroll; }
+
+.scroll a {
+    position: relative;}
+
+::-webkit-scrollbar{
+    display:none;}
 .copyright {
     color: #fff;
     text-align: center;
