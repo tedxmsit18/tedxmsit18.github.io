@@ -1,0 +1,328 @@
+html, body, .cover {
+    height: 100%;
+    background: white;
+}
+
+nav{
+    background-color: white;
+    height: 80px;
+    margin-bottom: 0;
+}
+
+
+nav.navbar.navbar-default.navbar-fixed-top{
+    margin-bottom: 0;
+}
+
+nav .container .collapse .nav button {
+    margin-top: -10px;
+}
+
+nav .container .navbar-header a img {
+    margin-top: -8px;
+    margin-left: -20px;
+}
+
+nav .container .collapse .nav a {
+    padding: 15px;
+    font-size: 15px;
+    
+}
+
+nav .container .collapse .nav a:hover {
+    color: red;
+}
+
+#reg a button{
+    background: red;
+    color: white;
+}
+
+
+#reg a:hover button {
+    background: white;
+    color: red;
+    border: 2px solid red;
+}
+
+nav .container .collapse .nav .dropdown-menu li a:hover {
+    background: red;
+    color: white;
+    
+}
+
+
+
+
+
+
+
+.caption h5 {
+   
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+
+
+.talk a:link .fa {
+   margin-top: 10px;
+    margin-left: -10px;
+}
+
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+    height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px ;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+
+
+
+
+
+
+#speakers h2 {
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+
+.speaker {
+    height: 120px;
+    background: cover;
+    width: 120px;
+    border-radius: 100%;
+    margin-bottom: 70px;
+}
+
+#ted b{
+    color: red;
+}
+
+#ted {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+
+#aboutted {
+    color: honeydew;
+ 
+
+}
+.space {
+    margin-right: 55px;
+    margin-top: 50px;
+}
+
+
+#foot  {
+    padding: 100px;
+}
+
+.about {
+    background-color: white;
+    text-align: inherit;
+    margin: auto;
+}
+
+.about h1 {
+    font-size: 40px;
+}
+.about p {
+    font-family: "quicksand";
+    font-size: 15px;
+}
+
+#myNavbar {
+    background-color: white;
+}
+.about img {
+    margin-top: 0px;
+  
+    height: 300px;
+    width: 390px;}
+
+.writeup {
+    height: 280px;
+    width: 300px;
+    border-radius: 100%;
+    margin-left: 30px;
+    border: 2px solid black;
+    font-size-adjust: auto;
+}
+
+.talk p{
+    font-family:  "quicksand";
+    font-size: 15px;
+}
+
+h3:hover {
+    color: red;
+}
+
+.talk:hover {
+    
+    color:white;
+    background-color: rgba(0,0,0,0.8);
+    
+    
+}
+.simg img:hover {
+  
+    height: 260px;
+    width: 310px;
+}
+
+.talk a:hover {
+    color: yellow;
+}
+.simg img {
+     border-radius: 100%;
+    height: 255px;
+    width:300px;
+}
+.talk {
+    background-color: rgba(0,0,0,0.1);
+    display: inline;
+}
+.modal-header, h4, .close {
+      background-color: rgba(255,0,0,0.8);
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+
+.send {
+    background-color:rgba(255,0,0,0.8); 
+    color: white;
+    padding: 10px;
+   
+}
+
+.send:hover {
+    padding: 12px;
+     background-color:rgb(255,0,0);
+    color: white;
+}
+
+
+.myBtn, .myBtn:link {
+    margin-top: 30px;
+      margin: 0 auto;
+  font-size: 2.0rem;
+  padding: 1.25rem 2.5rem;
+  display: block;
+  background-color: #f42929;
+  border: 1px solid transparent;
+  color: #ffffff;
+  font-weight: 300;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.myBtn:hover {
+      background-color: #ffffff;
+  color: #f42929;
+  border-color: #f42929;
+}
+
+
+.home-newsletter {
+padding: 10px 0;
+background: black;
+    color: white;
+    margin-top: 350px;
+    font-size-adjust: auto;
+}
+
+.home-newsletter .single {
+max-width: 650px;
+margin: 0 auto;
+text-align: center;
+position: relative;
+z-index: 2; }
+
+.home-newsletter .single h2 {
+font-size: 22px;
+color: white;
+text-transform: uppercase;
+margin-bottom: 40px; }
+
+.home-newsletter .single .form-control {
+height: 50px;
+background: rgba(255, 255, 255, 0.2);
+border-color: transparent;
+border-radius: 20px 0 0 20px;
+color: rgba(255,255,255,0.7);}
+
+
+.home-newsletter .single .form-control:focus {
+box-shadow: none;
+border-color: #243c4f; }
+
+.home-newsletter .single .btn {
+min-height: 50px; 
+border-radius: 0 20px 20px 0;
+background: rgba(255,0,0,0.7);
+color: #fff;
+}
+
+.footer-bottom {
+    background: black;
+    min-height: 30px;
+    width: 100%;
+border: none;
+}
+.copyright {
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+  
+}
+.scroll{
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.scroll a{
+    position: relative;
+}
+::-webkit-scrollbar{
+    display: none;
+}
