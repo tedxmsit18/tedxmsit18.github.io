@@ -1,2 +1,2 @@
-# tedxmsit18.github.io
-Official website of TEDxMSIT '18
+# tedxmsit
+Website of TEDxMSIT.

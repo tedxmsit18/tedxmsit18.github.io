@@ -4,81 +4,114 @@
         
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
           <!--<link href="bootstrap/js/bootstrap-modal.js" rel="stylesheet" media="screen">-->
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
           <link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
           <link rel="stylesheet" type="text/css" href="static/style.css">    
-            <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+                        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
             <title>TEDxMSIT</title>
-        </head>    
+        </head>
+       <style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+ 
+    min-height: 100%;
+    opacity: 20%;
+}
 
-        <body>
-         
-            <div role="nav">
-
-                    <nav class="navbar navbar-default navbar-fixed-top">
-                      <div class="container">
-                        <div class="navbar-header">
-                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>                        
-                          </button>
-                          <a class="navbar-brand" href="#"><img src="image/logo.JPG" width="160px;" height="60px;"></a>
-                        </div>
-                        <div class="collapse navbar-collapse" id="myNavbar">
-
-                          <ul class="nav navbar-nav navbar-right">
-
-                                <li><a href="index.html">HOME</a></li>
-                            <li><a href="talks.html">TALKS</a></li>
-                            <li class="active"><a href="about_us.html">ABOUT US</a></li>
-                            <li><a href="partners.html">PARTNERS</a></li>
-
-                             <li id="reg"><a href="#"><button type="button" class="btn btn-lg myBtn" data-toggle="modal" data-target="#myModal">BE A PARTNER</button></a></li>  
-                            </ul>
-                        </div>
-                      </div>
-                    </nav>
-            </div>
-              <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+    #logo {
+        max-height: 48px;
+        display: inline-block;
+        max-width: 180px;
+        min-height: inherit;
+       
+    }
     
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header" style="padding:35px 50px;">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4><span class="glyphicon glyphicon-earphone"></span> Contact</h4>
+    
+  
+.w3-bar .w3-button {
+    padding: 16px;
+    color: red;
+}
+   
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar" >
+      <a class=" w3-bar-item w3-block w3-btn " style=" box-shadow: 0 0 0;margin-top: 1%;" href="index.html"  ><img src="image/logo.JPG" class="w3-image" id="logo"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small" style="margin-top: 1%;">
+        <a href="index.html" class="w3-bar-item w3-button"> HOME</a>
+        <a href="about_us.html" class="w3-bar-item w3-button"> ABOUT</a>
+        <a href="talks.html" class="w3-bar-item w3-button">TALKS</a>
+        <a href="partners.html" class="w3-bar-item w3-button"> PARTNERS</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-button" onclick="document.getElementById('id01').style.display='block'">CONTACT</a>
+    </div>
+    
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+        <a href="index.html"  onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
+        <a href="about_us.html"  onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-question"></i>ABOUT</a>
+        <a href="talks.html"  onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-microphone"></i>TALKS</a>
+        <a href="partners.html"  onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user"></i>PARTNERS</a>
+     
+        <a href="#contact" class="w3-bar-item  w3-button" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-envelope"></i>CONTACT</a>
+ 
+</nav>
+    
+     <div class="w3-container">
+ 
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+       <h2 >CONTACT</h2>
+
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Name" name="usrname" required>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+              <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+          <button class="w3-button w3-red" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+         
         </div>
-        <div class="modal-body" style="padding:40px 40px;">
-          <form role="form">
-            <div class="form-group">
-              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Name</label>
-              <input type="text" class="form-control" id="usrname" placeholder="Enter Full Name">
-            </div>
-            <div class="form-group">
-              <label for="email"><span class="glyphicon glyphicon-envelope"></span> Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter Email Id">
-            </div>
-              <div class="form-group">
-               <label for="subject"><span class="glyphicon glyphicon-comment"></span> Message</label>
-                  <textarea rows=" 5" cols="70"id="subject" name="subject" placeholder="Write your message here.." ></textarea>
-            </div> 
-              
-           
-              <button type="submit"  class="bt btn-block send"><span class="glyphicon glyphicon-send"></span> Send</button>
-          </form>
+      </form>
+
         </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn send btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-          
-        </div>
-      </div>
-      
+
     </div>
   </div>
+</div>
             <br>
         <div class="container-fluid">
             <div class="panel panel-default about">
@@ -112,7 +145,7 @@
                         <div class="row-fluid">
                                 <div class="col-sm-8 col-xs-12">
                 
-                        <p> <br><br> TEDx is a global initiative which was born in 2009 to spread ideas further and to enable individuals and communities worldwide to hold independent events. The idea was to a form a globalized community allowing speakers from around the world to orchestrate their own change in a local community.TEDx events can be organized by anyone in their community after gaining a license from TED. In fact, TED provides very specific guidelines which need to be followed by the organizers. This helps provide a TED-like experience which inspires, educates and motivates the audience.TEDx is a platform that gives remarkable people around the world a chance to come out and share their ideas and perspectives with the rest of society, thus giving us new, insightful and exciting ways of looking at the world around us. There are over 3.26 million views in the TEDx youtube channel from 178 cities and 70 countries across the globe.</p>
+                        <p> <br><br> TEDx is a global initiative which was born in 2009 to spread ideas further and to enable individuals and communities worldwide to hold independent events. The idea was to a form a globalized community allowing speakers from around the world to orchestrate their own change in a local community.TEDx events can be organized by anyone in their community after obtaining a license from TED. In fact, TED provides very specific guidelines which need to be followed by the organizers. This helps provide a TED-like experience which inspires, educates and motivates the audience.TEDx is a platform that gives remarkable people around the world a chance to come out and share their ideas and perspectives with the rest of society, thus giving us new, insightful and exciting ways of looking at the world around us. There are over 3.26 million views in the TEDx youtube channel from 178 cities and 70 countries across the globe.</p>
                     </div>
                             
                     </div>
@@ -126,10 +159,10 @@
                         <div class="row-fluid">
                                 <div class="col-sm-8 col-xs-12">
                 
-                        <p> <br><br> TEDxMSIT forms a society that gathers people with innovate skillset and mind that knows no bounds.  With a highly rich heritage and a blazing future, we provide the ideal platform for people who wants to make a difference. The mega event that has been conducted for the last two years sees it's third this time around and it is working in lieu to surpass all the previous marks. In the last years we had some great individuals who blessed over stage.   Likes of Syed Salludin Pasha, Neeti Palta, Chad Norberg, Ankon Mitra, Kamla Bhasin just to name a few.  With the motto of ideas worth spreading, all of us really learnt a lot from the prior experiences. Last year’s theme,  'light the bulb’ gain a lot of recognition from all its audience and grabbed a lot of eyeballs towards us.The aim for the third literary is to go past all the prior rejuvenation   and  for this the team has worked tremendously hard as an unit to seek in minutely all the offbeat minds in the campus after some good lot work. The five departments that forms the society, works in synchronous with each other.   TEDxMSIT is becoming a name in itself by its tremendous effort and opportunity capturing ability and growing each passing day.</p>
+                        <p> <br><br> TEDxMSIT forms a society that gathers people with innovative skillset and mind that knows no bounds.  With a highly rich heritage and a blazing future, we provide the ideal platform for people who want to make a difference. The mega event that has been conducted for the last two years sees it's third this time around and it is working in lieu to surpass all the previous marks. In the last years we had some great individuals who blessed our stage.   Likes of Syed Salludin Pasha, Neeti Palta, Chad Norberg, Ankon Mitra, Kamla Bhasin just to name a few.  With the motto of ideas worth spreading, all of us really learnt a lot from prior experiences. Last year’s theme,  'light the bulb’ gained a lot of recognition from all its audience and grabbed a lot of eyeballs.The aim for the third literary is to go past all the prior rejuvenation   and  for this the team has worked tremendously hard as an unit to seek in minutely all the offbeat minds in the campus after some good lot work. The five departments that forms the society, works in synchronisation with each other.   TEDxMSIT is becoming a name in itself by its tremendous effort and opportunity capturing ability and growing each passing day.</p>
                     </div>
                             <div class="col-sm-4 col-xs-12">
-                                <img src="image/DSC_0336.jpg"  class="img-responsive">
+                                <img src="image/DSC_03366.jpg"  class="img-responsive">
                                 </div>
                             
                     </div>
@@ -140,31 +173,34 @@
             
             
             
-              <section class="home-newsletter">
-<div class="container">
-<div class="row">
-<div class="col-sm-12">
-	<div class="single">
-		<h2>Subscribe to our Newsletter</h2>
-	<div class="input-group">
-         <input type="email" class="form-control" placeholder="Enter your email">
-         <span class="input-group-btn">
-         <button class="btn btn-theme" type="submit">Subscribe</button>
-         </span>
-          </div>
-	</div>
+          <footer class=" w3-black w3-padding-35" style="margin-top: 64px; padding-top: 20px;">
+    <div class="w3-row ">
+<div class="w3-third w3-container">
+  <h2 style="text-align: center; color: red;" >What is TEDx?</h2>  
+  <p style="text-align: justify;">In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organised events that bring people together to share a TED-like experience. Our event is called TEDxMSIT, where x = independently organised TED event. At our TEDxMSIT event, TEDTalks video and live speakers will combine to spark deep discussion and connection in a small group. The TED conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organised.</p>
+  <br>
 </div>
+ <div class="w3-third w3-center w3-container">
+    <br><br>
+  <div class="w3-xlarge w3-section">
+     <a href="https://www.facebook.com/TEDxMSIT/" target="_blank"> <i class="fa fa-facebook-official fa-2x w3-hover-opacity"></i></a> <br> <br>
+      <a href="https://www.instagram.com/tedxmsit/" target="_blank"> <i class="fa fa-instagram fa-2x w3-hover-opacity"></i></a> <br> <br>
+      <a href="https://twitter.com/tedxmsit?lang=en" target="_blank"> <i class="fa fa-twitter fa-2x w3-hover-opacity"></i></a> <br> <br>
+  </div>
 </div>
-</div>
-               <div class="col-sm-offset-5">
-                   <br><br>
-                        <a href="https://www.facebook.com/TEDxMSIT/" target="_blank" class="fa fa-facebook"></a>
-                        <a href="https://twitter.com/tedxmsit?lang=en" target="_blank" class="fa fa-twitter"></a>
-                        <a href="https://www.instagram.com/tedxmsit/" target="_blank" class="fa fa-instagram"></a>
+<div class="w3-third w3-container w3-center">
+  <h2  style="text-align: center; color: red;">Quick Links</h2>
+    <div class="w3-center  ">
+     <a href="index.html" class="w3-bar-item w3-button"> HOME</a> <br> <br>
+      <a href="about_us.html" class="w3-bar-item w3-button">ABOUT</a> <br> <br>
+      <a href="talks.html" class="w3-bar-item w3-button">TALKS</a> <br> <br>
+         <a href="partners.html" class="w3-bar-item w3-button">PARTNERS</a> <br> <br>
 
-                    </div>
-           
-            </section>
+    </div>
+</div>
+    </div>
+  
+</footer>
             
             <div class="footer-bottom">
 
@@ -172,18 +208,32 @@
 
 		<div class="row">
 
-			<div class="col-xs-12 col-sm-offset-3 col-md-offset-3 col-lg-6">
-
+		
 				<div class="copyright">
 
 					TEDxMSIT &copy; All rights reserved.
 
 				</div>
 
-			</div>
         </div>
                </div>
                 </div>
+            <script>
+    var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+    </script>       
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         </body>
